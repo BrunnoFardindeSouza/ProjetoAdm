@@ -1,0 +1,72 @@
+@media screen and (orientation:landscape) and (max-width:490px){
+    /*ITENS DO MENU FLUTUANTE */
+
+    nav#itensMenu{
+        width: 50%;
+        display: flex;
+        min-height: 100vh;
+        align-items:center;
+        justify-content: end;
+        flex-direction:column;
+    }
+    section#menu > menu{
+        max-width: 200px;
+    }
+    section#links{
+        max-width: 200px;
+      
+    }
+    nav#itensMenu >  section#painelAdm{
+        max-width: 200px;
+
+    }
+    /*PAINEL ADM */
+
+    main > section#PainelAdm{
+        width: 290px;
+        height: 400px;     
+    }
+    /* PAINEL LOGIN */
+    main > section#formulario{
+        margin-top: 50px;
+        width: 60%;
+        height: 240px;       
+    }
+    main > section#formulario > form > div.inputs{
+        max-width: 220px;
+        margin: 10px 1px 20px 20px;
+        float: left;
+    }
+    main section#formulario form > p > span#formVoltar{
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+    /*PAINEL ADM FLUTUANTE*/
+
+    main > section#PainelAdm{
+        width: 50%;
+        height: 250px;
+        margin-top: 64px;
+    }
+    main > section#PainelAdm > form > p > input.coletajornal{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    main > section#PainelAdm > form > p >  span#JornalVoltar{
+        margin-top: 20px;
+    } 
+
+}
+@media screen and (min-width:620px){
+    /* PAINEL LOGIN */
+    main > section#formulario{
+        height: 50%;
+        width: 600px;       
+    }
+    main > section#PainelAdm{
+        height: 40%;
+        width: 600px;
+    }
+    
+}

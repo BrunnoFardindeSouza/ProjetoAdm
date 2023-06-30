@@ -3,9 +3,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
-body{
+body,html{
     display: flex;
-    min-height: 100vh;
+    
     flex-direction: column;
     background-color: darkgrey;
 }
@@ -46,7 +46,7 @@ header >  section > section#btn-login > input{
 /*MENU FLUTUANTE*/
 
 nav#itensMenu{
-    height:auto;
+    max-height:100vh;
     width: 290px;
     display: none;
     margin-top: 0px;
@@ -67,7 +67,7 @@ section#menu > menu{
 }
 section#menu > menu > ul{
     text-align: center;
-    height: 400px;
+    max-height: 400px;
     border: 1px solid white;
 
 }
@@ -80,7 +80,13 @@ section#menu > menu > ul > li{
     line-height: 28px;
     background-color: blue;
 }
+section#menu > menu > ul > li:hover{
+    background-color: #424242;
+
+}
 section#links{
+    margin-top: 10px;
+    max-height: 400px;
     width: 240px;
     border: 1px solid white;
     background-color: red;
@@ -96,6 +102,9 @@ section#links > ul > li{
     list-style: none;
     background-color: blue;
 }
+section#links > ul > li:hover{
+    background-color: #424242;
+}
 nav#itensMenu >  section#painelAdm {
     display: none;
     color: white;
@@ -104,11 +113,14 @@ nav#itensMenu >  section#painelAdm {
     text-align: center;
     margin-bottom: 10px;
     border: 1px solid white;
+    width: 83%;
 }
 nav#itensMenu >  section#painelAdm > span#AcessoPainel{
-    margin-top: 22px;
+    padding: 40px;
     color: white;
+    display: block;
     cursor: pointer;
+    margin-top: 22px;
 
 }
 section#voltar{
@@ -133,6 +145,7 @@ section#voltar > span#previous{
 main{
     text-align: center;
     flex-grow: 1;
+    min-height: 100vh;
     background-color: white;
     
 }
@@ -165,9 +178,9 @@ main > section#formulario > form > div.inputs > label {
 }
 main > section#formulario > form > div > label > span{
     padding-top: 7px;
-padding-left: 10px;
-width: 15%;
-color: white;
+    padding-left: 10px;
+    width: 15%;
+    color: white;
 
 }
 main section#formulario> form > p > input.logando{
@@ -200,7 +213,7 @@ main > section#formulario > form > div.inputs > input{
 /* PAINEL ADM  FLUTUANTE*/
 
 main > section#PainelAdm{
-    display: block;
+    display: none;
     top: 50%;
     left: 50%;
     width: 290px;

@@ -44,6 +44,8 @@ btn_entrar.addEventListener('click',()=>{
         alert('Olá Sr Brunno Fardin de Souza é um prazer te-lo de volta!')
         formulario.style.display='none'
         painelAdm.style.display='block'
+        
+        
     }
 })
 
@@ -74,15 +76,33 @@ JornalVoltar.addEventListener('click',()=>{
 c = 1
 
 btn_jornal.addEventListener('click',()=>{
-    let qtd_jronal = Number(qtd_jronais.value)
-    while(c<=qtd_jronal){
+    let qtd_jornal = Number(qtd_jronais.value)
+    PainelAdm.style.display='none'
+    
+    while(c <= qtd_jornal){
+        var DivsJornais = [...document.getElementsByClassName('divsJornais')]
         var criarDiv = document.createElement('div')
         var criarSpan = document.createElement('span') 
+        var criarSpan2 = document.createElement("span")
+        
         criarSpan.setAttribute('class','material-symbols-outlined')
         criarSpan.innerText=' download'
+        
+        
+        criarSpan2.setAttribute('class','material-symbols-outlined')
+        criarSpan2.innerText='edit'
+        criarSpan2.style.marginTop='10px'
+        criarSpan2.style.background='black'
+        criarSpan2.style.color='white'
+        
+        
+        criarDiv.setAttribute('class','divsJornais')
         criarDiv.appendChild(criarSpan)
         jornais.appendChild(criarDiv)
+            
         c++
-    
     }
+    qtd_jronais.value=''
+    
+       
 })

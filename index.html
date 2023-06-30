@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Projeto-Inicial</title>
+</head>
+<body>
+    <header>
+        <section id="menu-header">
+            <menu id="gaveta">
+                <span class="material-symbols-outlined" id="gaveta-apps">apps</span>
+            </menu>
+            <h1>Bem Vindo</h1>
+            <section id="btn-login">
+                <input type="button" value="Login" id="login">
+            </section>
+        </section>
+    </header>
+    <nav id="itensMenu">
+        <section id="menu">
+            <menu id="intens-menu">
+                <ul>
+                    <li>HOME</li>
+                    <li>BLOG</li>
+                    <li>POSTAGENS</li>
+                    <li>Noticias</li>
+                    <li>Projetos</li>
+                    <li>FALE COM NOSCO</li>
+                </ul>
+            </menu>
+        </section>
+        <section id="links">
+            <ul>
+                <li>Link1</li>
+                <li>Link1</li>
+                <li>Link1</li>
+                <li>Link1</li>
+                <li>Link1</li>
+                <li>Link1</li>
+                <li>Link1</li>
+                <li>Link1</li>
+            </ul>
+        </section>
+        <section id="painelAdm">
+            <h2>Painel adm</h2>
+            <hr>
+            <span class="material-symbols-outlined" id="AcessoPainel">apps</span>
+        </section>
+        <section id="voltar">
+            <span class="material-symbols-outlined" id="previous">
+                arrow_back_ios
+            </span>
+        </section>
+        
+    </nav>
+    <main>
+        <section id="formulario">
+            <form action="" autocomplete="on">
+                <h1>Login</h1>
+                <div  class="inputs">
+                    <label for="usuário"><span class="material-symbols-outlined" id="puser"> person</span></label>
+                    <input type="email" name="" id="usuário" placeholder="  Email" autocomplete="email">
+
+                </div>
+                <div class="inputs">
+                    <label for="senha"><span class="material-symbols-outlined">key</span></label>
+                    <input type="password" name="" id="senha" placeholder="  Senha" autocomplete="current-password">
+                </div>
+                <p>
+                    <input type="button" value="Entrar" class="logando" id="entraruser">
+                    <input type="reset" value="Limpar" class="logando">
+                </p>
+                <p>
+                    <span class="material-symbols-outlined" id="formVoltar">arrow_back</span>
+                </p>
+            </form>
+            
+
+        </section>
+        <section id="PainelAdm">
+            <form action="">
+                <h1>Gerador de Jornais</h1>
+                <p>
+                    <label for="publicacao">Jornais </label>
+                    <input type="Number" placeholder="quantos jornais" id="publicacao" class="coletajornal">
+                </p>
+                <p>
+                    <input type="button" value="Enviar" id="btn_jornal">
+                    <input type="reset" value="Limpar">
+                </p>
+                <p>
+                    <span class="material-symbols-outlined" id="JornalVoltar">arrow_back</span>
+                </p>
+            </form>
+
+        </section>
+        <section id="jornais">
+        </section>
+    </main>
+    <footer>Criado por Brunno Fardin de Souza</footer>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-@media screen and (orientation:landscape){
+@media screen and (orientation:landscape) and (max-width:480px){
     /*ITENS DO MENU FLUTUANTE */
 
     nav#itensMenu{
@@ -17,22 +17,16 @@
       
     }
     nav#itensMenu >  section#painelAdm{
-        max-width: 290px;
+        max-width: 300px;
 
-    }
-    /*PAINEL ADM */
-
-    main > section#PainelAdm{
-        position: fixed;
-        width: 290px;
-        height: 240px;     
     }
     /* PAINEL LOGIN */
     main > section#formulario{
         position: fixed;
         margin-top: 50px;
-        width: 60%;
-        height: 240px;       
+        width: 90%;
+        height: 250px; 
+      
     }
     main > section#formulario > form > div.inputs{
         max-width: 220px;
@@ -43,12 +37,14 @@
         margin-top: 20px;
         border-radius: 50%;
     }
+
     /*PAINEL ADM FLUTUANTE*/
 
     main > section#PainelAdm{
-        width: 50%;
-        height: 250px;
+        width: 90%;
+        height:290px;
         margin-top: 64px;
+        
     }
     main > section#PainelAdm > form > p > input.coletajornal{
         margin-top: 20px;
@@ -61,14 +57,13 @@
 
 }
 
- @media screen and (min-width:720px){
+ @media screen and (min-width:720px) and (orientation:landscape){
     main > section#formulario{
-
-        height: 50%;
+        height: auto;
         width: 600px;       
     }
     main > section#PainelAdm{
-        height: 40%;
+        height: auto;
         width: 600px;
     }
     

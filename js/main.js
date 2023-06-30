@@ -1,3 +1,5 @@
+let formulario = document.getElementById('formulario')
+let PainelAdm = document.getElementById('PainelAdm')
 // MENU FLUTUANTE
 let gaveta = document.getElementById('gaveta-apps')
 let itensmenu = document.getElementById('itensMenu')
@@ -8,6 +10,8 @@ gaveta.addEventListener('click',()=>{
         itensmenu.style.display='none'
     }else{
         itensmenu.style.display='flex'
+        formulario.style.display='none'
+        PainelAdm.style.display='none'
     }
     
 })
@@ -21,11 +25,12 @@ previous.addEventListener('click',()=>{
 let login = document.getElementById("login")
 let formVoltar = document.getElementById('formVoltar')
 let btn_entrar = document.getElementById('entraruser')
-let formulario = document.getElementById('formulario')
 
 
 login.addEventListener('click',()=>{
     formulario.style.display='block'
+    itensmenu.style.display='none'
+    PainelAdm.style.display='none'
     
 })
 
@@ -53,7 +58,7 @@ btn_entrar.addEventListener('click',()=>{
 
 let acessoPainel = document.getElementById('AcessoPainel')
 let painelAdm = document.getElementById('painelAdm')
-let PainelAdm = document.getElementById('PainelAdm')
+
 
 acessoPainel.addEventListener('click',()=>{
     itensmenu.style.display='none'

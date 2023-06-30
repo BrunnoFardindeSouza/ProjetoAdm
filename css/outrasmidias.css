@@ -1,4 +1,4 @@
-@media screen and (orientation:landscape) and (max-width:490px){
+@media screen and (orientation:landscape){
     /*ITENS DO MENU FLUTUANTE */
 
     nav#itensMenu{
@@ -17,17 +17,19 @@
       
     }
     nav#itensMenu >  section#painelAdm{
-        max-width: 200px;
+        max-width: 290px;
 
     }
     /*PAINEL ADM */
 
     main > section#PainelAdm{
+        position: fixed;
         width: 290px;
-        height: 400px;     
+        height: 240px;     
     }
     /* PAINEL LOGIN */
     main > section#formulario{
+        position: fixed;
         margin-top: 50px;
         width: 60%;
         height: 240px;       
@@ -58,9 +60,10 @@
     } 
 
 }
-@media screen and (min-width:620px){
-    /* PAINEL LOGIN */
+
+ @media screen and (min-width:720px){
     main > section#formulario{
+
         height: 50%;
         width: 600px;       
     }
@@ -69,4 +72,4 @@
         width: 600px;
     }
     
-}
+} 
